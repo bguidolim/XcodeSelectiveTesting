@@ -6,7 +6,7 @@ import Foundation
 import PathKit
 import XcodeProj
 
-extension String: Error {}
+extension String: @retroactive Error {}
 
 extension XCWorkspace {
     public func allProjects(basePath: Path) throws -> [(XcodeProj, Path)] {
